@@ -3,6 +3,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const User = require('../models/register');
 const registerRouter = express.Router();
+const md5 = require('md5');
 registerRouter.use(express.urlencoded({ extended: true }));
 
 registerRouter.route('/')
@@ -13,7 +14,7 @@ registerRouter.route('/')
         const newuser = new User({
             name: req.body.username,
             mail: req.body.email,
-            password: req.body.password
+            password: md5(req.body.password)
         });
         newuser.save((err) => {
             if (err) {
