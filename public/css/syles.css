@@ -1,0 +1,56 @@
+header {
+    background-color: rgb(8, 8, 8);
+    width: 100%;
+    height: 80px;
+    font-family: 'Caveat Brush',cursive;
+    box-shadow: 1px 2px 2px 2px rgba(0,0,0,0.5);
+}
+
+.headerdiv h1 {
+    display: inline-block;
+    color: aliceblue;
+    position: relative;
+    left: 400px;
+}
+
+.mylogo {
+    margin-top: 10px;
+    margin-left: 30px;
+    border-radius: 50%;
+    display: inline-block;
+} 
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(53, 51, 51);
+}
+form input {
+    max-width: 400px;
+    margin: 10px;
+}
+
+.myregister {
+    position: absolute;
+    left: 40%;
+}
+.mylogin{
+    position: absolute;
+    left: 40%;
+}
+.secretdiv {
+    position: absolute;
+    left:10px;
+    margin-top: 20px;
+    width: 250px;
+    box-shadow: 1px 2px 2px 2px rgba(0,0,0,0.5);
+    border-radius: 5px;
+}
+
+.headerbtn {
+    position: relative;
+    left: 900px;
+    bottom: 40px;
+}
