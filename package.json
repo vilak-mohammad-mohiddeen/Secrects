@@ -8,6 +8,9 @@
   },
   "author": "Vilak Mohammad Mohiddeen",
   "license": "ISC",
+  "engines": {
+    "node": "12.18.1"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
     "bcrypt": "^5.0.1",

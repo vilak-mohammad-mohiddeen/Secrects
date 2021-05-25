@@ -33,9 +33,8 @@ app.use('/secret', secretRouter);
 app.use('/submit', submitRouter);
 mongoose.connect('mongodb+srv://MoinVilak:' + process.env.CLUSTER_PASSWORD + '@cluster0.sgkrd.mongodb.net/secretDB', { useUnifiedTopology: true, useNewUrlParser: true });
 
-passport.use(User.createStrategy());
-passport.serializeUser(User.serializeUser());
-passport.deserializeUser(User.deserializeUser());
-app.listen(3000, () => {
-    console.log("Server running in port 3000");
-})
+let port = process.env.PORT;
+if (port == null || port == "") {
+    port = 3000;
+}
+app.listen(port);
